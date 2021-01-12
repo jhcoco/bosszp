@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Boss岗位分析可视化</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="{{ url_for('static', filename = 'img/favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/mystyle.css') }}">
+    <script src="{{ url_for('static', filename = 'js/jquery-1.8.3.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'highcharts/highcharts.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'highcharts/highcharts-more.js') }}"></script>
+    <!-- <script src="https://code.highcharts.com.cn/highcharts/modules/exporting.js"></script> -->
+    <script src="{{ url_for('static', filename = 'highcharts/oldie.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'highcharts/wordcloud.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'highcharts/dark-unica.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/word.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/packgebubble.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/pie.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/cylindrical.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/fan.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/order.js') }}"></script>
+
+</head>
+<body>
+<!-- 首页设置 -->
+<div class="index">
+    <!-- 标题栏 -->
+    <div class="title">
+        <p>Boss直聘岗位分析可视化</p>
+    </div>
+    <div class="paint_area">
+        <div class="data_frame_top">
+            <div class="data_frame_left_top">
+                <div id="pie"></div>
+            </div>
+            <div class="data_frame_middle_top">
+                <div id="packedbubble"></div>
+                <!-- middle_top -->
+            </div>
+            <div class="data_frame_right_top">
+                <p style="color: #FFFFFF;font-size: 20px;font-family: 'Unica One', sans-serif">学历占比</p>
+                <div id="fan">
+                </div>
+            </div>
+        </div>
+        <div class="data_frame_bottom">
+            <div class="data_frame_left_bottom">
+                <div id="cylindrical"></div>
+            </div>
+            <!-- 词云图 -->
+            <div class="data_frame_middle_bottom">
+                <div id="word_cloud"></div>
+            </div>
+            <div class="data_frame_right_bottom">
+                <div id="order">
+                    <center>
+                        <p style="font-size: 20px;font-family: 'Unica One', sans-serif">企业招聘Top 10</p>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>公司名称</th>
+                                <th>岗位数量</th>
+                            </tr>
+                            </thead>
+                            <tbody id="J_TbData">
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <p>Copyright &copy; 公众号 jhzhong share</p>
+    </div> -->
+</div>
+<script>
+
+</script>
+</body>
+</html>

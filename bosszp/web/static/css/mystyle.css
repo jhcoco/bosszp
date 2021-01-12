@@ -1,0 +1,103 @@
+/* 去除页面边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background-color: #47475c;*/
+    background: url("../img/bg.png") repeat;
+    background-size: 100% 100%;
+}
+
+/* 设置主页 */
+.index {
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    min-height: 960px;
+}
+
+/* 设置标题栏 */
+.title {
+    width: 100%;
+    height: 100%;
+    min-height: 60px;
+    color: #FFFFFF;
+    font-size: 45px;
+    font-family: "microsoft yahei";
+    /* 文本水平居中 */
+    text-align: center;
+    /* 文本垂直居中 line-height 需与min-height一致*/
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+/* 设置绘图区域 */
+.paint_area {
+    width: 100%;
+    min-width: 1200px;
+    min-height: 900px;
+}
+
+
+/* 设置数据框 */
+.data_frame_top, .data_frame_bottom {
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    min-height: 450px;
+    overflow: hidden;
+}
+
+.data_frame_left_top,
+.data_frame_middle_top,
+.data_frame_right_top,
+.data_frame_left_bottom,
+.data_frame_middle_bottom,
+.data_frame_right_bottom {
+    width: 33.3%;
+    height: 100%;
+    min-width: 400px;
+    min-height: 450px;
+    float: left;
+    text-align: center;
+}
+
+/* 设置图表区域*/
+#packedbubble,#pie,#fan,#cylindrical,#word_cloud,#order {
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+    min-height: 450px;
+    margin: 0 auto;
+    color: whitesmoke;
+    /*背景透明*/
+    background-color: rgba(0,0,0,0);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    font: bold 16px "微软雅黑";
+    color: #fff;
+}
+
+td {
+    font: 14px "微软雅黑";
+}
+
+tbody *:hover {
+    cursor: pointer;
+    font-size: larger;
+    background-color: #7777c1;
+}
